@@ -1,0 +1,45 @@
+
+[
+    {
+        "nome": "Dragão",
+        "imagem": "./imagens/dragao.jpg",
+        "forca": 95,
+        "velocidade": 80,
+        "defesa": 90
+    },
+    {
+        "nome": "Fênix",
+        "imagem": "./imagens/fantasy-bird-illustration.jpg",
+        "forca": 85,
+        "velocidade": 95,
+        "defesa": 75
+    },
+    {
+        "nome": "Kraken",
+         "imagem": "./imagens/kroken.jpg",
+        "forca": 90,
+        "velocidade": 60,
+        "defesa": 95
+    },
+    {
+        "nome": "Lobo",
+         "imagem": "./imagens/lobo.jpg",
+        "forca": 75,
+        "velocidade": 95,
+        "defesa": 80
+    },
+    {
+        "nome": "Golem",
+         "imagem": "./imagens/golem.jpg",
+        "forca": 100,
+        "velocidade": 40,
+        "defesa": 100
+    },
+    {
+        "nome": "Grifo",
+         "imagem": "./imagens/grifo.jpg",
+        "forca": 85,
+        "velocidade": 90,
+        "defesa": 85
+    }
+]

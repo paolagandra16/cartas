@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background: #1f2937;
+            border-bottom: 3px solid #eab308;
+        }
+
+        header h1 {
+            color: #eab308;
+            font-size: 35px;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .placar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .placar h2 {
+            font-size: 20px;
+        }
+
+        .placar span {
+            display: block;
+            color: #eab308;
+            font-size: 30px;
+            margin-top: 8px;
+        }
+
+        .versus {
+            color: #ef4444;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .jogo h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .cartas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .carta {
+            width: 200px;
+            padding: 12px;
+            background: #1f2937;
+            color: white;
+            border: 2px solid #eab308;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .carta:hover {
+            background: #374151;
+            transform: translateY(-5px);
+        }
+
+        .carta img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .carta h3 {
+            color: #eab308;
+            margin: 10px 0;
+        }
+
+        .carta p {
+            margin: 6px;
+        }
+
+        .resultado {
+            background: #1f2937;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .resultado h2 {
+            color: #eab308;
+            margin-bottom: 15px;
+        }
+
+        #mensagem {
+            white-space: pre-line;
+            line-height: 1.7;
+        }
+
+        #atributos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .botao {
+            padding: 12px 20px;
+            background: #eab308;
+            color: #111827;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background: #ca8a04;
+        }
+
+        .reiniciar {
+            display: block;
+            margin: 25px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f2937;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 600px) {
+            .carta {
+                width: 145px;
+            }
+
+            .carta img {
+                height: 100px;
+            }
+
+            .placar {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SUPER TRUNFO</h1>
+        <p>Escolha sua carta e vença a disputa!</p>
+    </header>
+
+    <main>
+
+        <section class="placar">
+
+            <div>
+                <h2>Jogador</h2>
+                <span id="pontosJogador">0</span>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div>
+                <h2>Computador</h2>
+                <span id="pontosComputador">0</span>
+            </div>
+
+        </section>
+
+        <section class="jogo">
+
+            <h2>Escolha sua carta</h2>
+
+            <div id="cartas" class="cartas"></div>
+
+        </section>
+
+        <section class="resultado">
+
+            <h2>Resultado da rodada</h2>
+
+            <p id="mensagem">Escolha uma carta para começar!</p>
+
+            <div id="atributos"></div>
+
+        </section>
+
+        <button id="reiniciar" class="botao reiniciar">
+            Reiniciar jogo
+        </button>
+
+    </main>
+
+    <footer>
+        <p>Super Trunfo | Desenvolvido pelo grupo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
